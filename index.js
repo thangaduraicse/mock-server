@@ -1,1 +1,2 @@
-console.log('app is running');
+import mockData from './data';
+console.log('app is running', mockData);

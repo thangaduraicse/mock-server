@@ -1,0 +1,23 @@
+{
+  "name": "mock-server",
+  "version": "0.0.1",
+  "description": "Mock server to serve static json using webpack dev server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thangaduraicse/mock-server.git"
+  },
+  "keywords": [
+    "Webpack Dev Server",
+    "JSON"
+  ],
+  "author": "Thangadurai Nainamalai <duraithanga3@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/thangaduraicse/mock-server/issues"
+  },
+  "homepage": "https://github.com/thangaduraicse/mock-server#readme"
+}

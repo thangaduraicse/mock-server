@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const mockserver = require('./mock-server');
 
 module.exports = {
   entry: [
@@ -12,29 +13,13 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
-  module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env']
-        }
-      }
-    }]
-  },
   resolve: {
-    modules: [
-      'node_modules'
-    ],
     extensions: ['.js', '.json']
   },
-  resolveLoader: {
-    moduleExtensions: ['-loader']
-  },
-  devtool: 'cheap-module-source-map',
   devServer: {
+    before: function(app) {
+      mockserver(app);
+    },
     contentBase: path.resolve(__dirname, './content'),
     compress: true,
     historyApiFallback: {
@@ -43,10 +28,7 @@ module.exports = {
     https: false,
     port: 8081,
     publicPath: '/',
-    setup: function(app) {
-      console.log('======= app', app);
-    },
-    stats: true,
+    stats: 'errors-only',
     watchOptions: {
       aggregateTimeout: 1000,
       ignored: /node_modules/,

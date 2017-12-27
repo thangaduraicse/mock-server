@@ -9,27 +9,25 @@ const fromPath = (fromPath) => {
 const module1Path = fromPath('data/module1');
 const module2Path = fromPath('data/module2');
 
-const data = {
+module.exports = {
   module1: [
     {
       content: module1Path('stocks.json'),
-      path: '/stocks'
+      pathName: 'stocks'
     },
     {
       content: module1Path('zips.json'),
-      path: '/zips'
+      pathName: 'zips'
     }
   ],
   module2: [
     {
       content: module2Path('enron.json'),
-      path: '/enron'
+      pathName: 'enron'
     },
     {
       content: module2Path('world_bank.json'),
-      path: '/world-bank'
+      pathName: 'world-bank'
     }
   ]
 };
-
-export default data;

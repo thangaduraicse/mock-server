@@ -4,6 +4,7 @@
   "description": "Mock server to serve static json using webpack dev server",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js --progress --color --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/thangaduraicse/mock-server/issues"
   },
-  "homepage": "https://github.com/thangaduraicse/mock-server#readme"
+  "homepage": "https://github.com/thangaduraicse/mock-server#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.36",
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "babel-loader": "^8.0.0-beta.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
 }

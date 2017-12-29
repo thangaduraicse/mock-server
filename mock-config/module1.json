@@ -1,0 +1,16 @@
+{
+  "name": "Module 1 Mock",
+  "modulePath": "module-1",
+  "endPoints": [
+    {
+      "path": "stocks",
+      "method": "get",
+      "responseData": "stocks"
+    },
+    {
+      "path": "zips",
+      "method": "post",
+      "responseData": "zips"
+    }
+  ]
+}

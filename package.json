@@ -4,7 +4,7 @@
   "description": "Mock server to serve static json using webpack dev server",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js --progress --color --watch",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,8 +21,8 @@
     "url": "https://github.com/thangaduraicse/mock-server/issues"
   },
   "homepage": "https://github.com/thangaduraicse/mock-server#readme",
-  "devDependencies": {
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+  "dependencies": {
+    "express": "^4.16.2",
+    "yargs": "^10.0.3"
   }
 }

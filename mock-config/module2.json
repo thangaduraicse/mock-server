@@ -1,0 +1,16 @@
+{
+  "name": "Module 2 Mock",
+  "modulePath": "module-2",
+  "endPoints": [
+    {
+      "path": "enron",
+      "method": "get",
+      "responseData": "enron"
+    },
+    {
+      "path": "world-bank",
+      "method": "get",
+      "responseData": "world_bank"
+    }
+  ]
+}

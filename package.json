@@ -1,7 +1,7 @@
 {
   "name": "mock-server",
   "version": "0.0.1",
-  "description": "Mock server to serve static json using webpack dev server",
+  "description": "Mock server to serve static json using express",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -12,7 +12,8 @@
     "url": "git+https://github.com/thangaduraicse/mock-server.git"
   },
   "keywords": [
-    "Webpack Dev Server",
+    "Express",
+    "Yargs",
     "JSON"
   ],
   "author": "Thangadurai Nainamalai <duraithanga3@gmail.com>",
